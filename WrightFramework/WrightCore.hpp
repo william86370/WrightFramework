@@ -8,11 +8,17 @@
 
 #ifndef WrightCore_hpp
 #define WrightCore_hpp
+//Import all WrightFramework Headers
 #include "WrightNetworking.hpp"
 #include "WrightCryptography.hpp"
+#include "WrightLogging.hpp"
+//Import System Headers
 #include <sys/utsname.h>
 #include <sstream>
 #endif /* WrightCore_hpp */
+
 utsname GetSystemInformation();
 void GetCurrentTime();
 std::string RunCommand(const char* cmd);
+int FirstConnect(WrightNetworking Client,WrightCryptography ClientCrypto);
+void StartLogging();

@@ -4,7 +4,7 @@
 //
 //  Created by william wright on 2/18/19.
 //  Copyright © 2019 Silvertap. All rights reserved.
-//
+//  Developed To Allow WrightFramework to Crypt
 
 #ifndef WrightCryptography_hpp
 #define WrightCryptography_hpp

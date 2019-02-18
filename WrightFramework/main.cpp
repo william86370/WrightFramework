@@ -6,22 +6,23 @@
 //  Copyright © 2019 Silvertap. All rights reserved.
 //
 
-#include "WrightCore.hpp"
-using namespace std;
+#include "WrightCore.hpp"//include WrightFramwork With WrightNetworking and WrightCrypto
 
 int main(int argc, const char * argv[]) {
-    WrightCryptography test;
-   
-    struct utsname sysinfo;
-    uname(&sysinfo);
-    string systeminfo;
-    std::stringstream ss;
-    ss<<sysinfo.nodename<<","<<sysinfo.machine<<","<<sysinfo.release;
-    systeminfo = ss.str();
-    cout<<systeminfo<<endl;
-    string buff = test.XorHMAC(systeminfo,'h','p');
-    cout<<"HMAC string: "<<buff<<endl;
-    string buff2 = test.XorHMAC(buff,'h','p');
-    cout<<"HMAC decrypted string: "<<buff2<<endl;
+    //Define Varables
+    char HostIpAddress[] = "192.168.1.1";
+    //Init the Wright Framework Classes
+    WrightNetworking ClientNetworking;
+    WrightCryptography ClientCrypto;
+    //Make the network socket
+    ClientNetworking.ipv4TCPClientSocket(HostIpAddress,25565);
+    //Send the Init to the Host for processing
+    FirstConnect(ClientNetworking,ClientCrypto);
+    //Recieve Data From the Host And Process Data
+    
+    //Create Watchdog Daemon To make sure Logging Client Isnt Ever Closed
+    
+    //Start Logging Data From Client
+    StartLogging();
     return 0;
 }

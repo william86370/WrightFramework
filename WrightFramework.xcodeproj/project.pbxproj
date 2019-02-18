@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1074627C221B1F8200A81B3E /* WrightCryptography.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1074627A221B1F8200A81B3E /* WrightCryptography.cpp */; };
 		1074627F221B47BA00A81B3E /* WrightCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1074627D221B47BA00A81B3E /* WrightCore.cpp */; };
+		10746282221B5C5200A81B3E /* WrightLogging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10746280221B5C5200A81B3E /* WrightLogging.cpp */; };
 		10ABE4CE2214AD5B005B8B3B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10ABE4CD2214AD5B005B8B3B /* main.cpp */; };
 		10ABE4D62214AD76005B8B3B /* WrightNetworking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10ABE4D42214AD76005B8B3B /* WrightNetworking.cpp */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,8 @@
 		1074627B221B1F8200A81B3E /* WrightCryptography.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WrightCryptography.hpp; sourceTree = "<group>"; };
 		1074627D221B47BA00A81B3E /* WrightCore.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WrightCore.cpp; sourceTree = "<group>"; };
 		1074627E221B47BA00A81B3E /* WrightCore.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WrightCore.hpp; sourceTree = "<group>"; };
+		10746280221B5C5200A81B3E /* WrightLogging.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WrightLogging.cpp; sourceTree = "<group>"; };
+		10746281221B5C5200A81B3E /* WrightLogging.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WrightLogging.hpp; sourceTree = "<group>"; };
 		10ABE4CA2214AD5B005B8B3B /* WrightFramework */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WrightFramework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10ABE4CD2214AD5B005B8B3B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		10ABE4D42214AD76005B8B3B /* WrightNetworking.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WrightNetworking.cpp; sourceTree = "<group>"; };
@@ -71,6 +74,8 @@
 				10ABE4D52214AD76005B8B3B /* WrightNetworking.hpp */,
 				1074627A221B1F8200A81B3E /* WrightCryptography.cpp */,
 				1074627B221B1F8200A81B3E /* WrightCryptography.hpp */,
+				10746280221B5C5200A81B3E /* WrightLogging.cpp */,
+				10746281221B5C5200A81B3E /* WrightLogging.hpp */,
 				1074627D221B47BA00A81B3E /* WrightCore.cpp */,
 				1074627E221B47BA00A81B3E /* WrightCore.hpp */,
 			);
@@ -135,6 +140,7 @@
 			files = (
 				1074627C221B1F8200A81B3E /* WrightCryptography.cpp in Sources */,
 				1074627F221B47BA00A81B3E /* WrightCore.cpp in Sources */,
+				10746282221B5C5200A81B3E /* WrightLogging.cpp in Sources */,
 				10ABE4D62214AD76005B8B3B /* WrightNetworking.cpp in Sources */,
 				10ABE4CE2214AD5B005B8B3B /* main.cpp in Sources */,
 			);
